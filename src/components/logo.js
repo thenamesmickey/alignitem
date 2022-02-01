@@ -1,13 +1,14 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx } from 'theme-ui';
+import { jsx, Image } from 'theme-ui';
 import { Link } from 'components/link';
 import LogoSvg from 'components/icons/logo';
+import logo from 'assets/images/logo.png'
 
 export default function Logo({ isSticky, footer, ...props }) {
   return (
     <Link path="/" sx={styles.logo} {...props}>
-      <LogoSvg />
+      <Image src={logo}></Image>
     </Link>
   );
 }
